@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Skin Club</title>
+	<style type="text/css">
+		body,html{
+			padding: 0;
+			margin: 0;
+			background: #141225;
+		}
+		.content-item{
+			padding: 10px;
+			width: 220px;
+			margin: auto;
+			margin-top: 80px;
+			text-align: center;
+			font-family: sans-serif;
+			position: relative;
+			z-index: 1;
+			overflow: hidden;
+			padding-bottom: 80px;
+		}
+		.content-item img{
+			width: 100%;
+		}
+		.textt1{
+			font-size: 16px;
+			line-height: 1;
+			margin-bottom: 7px;
+			color: #fff;
+			padding: 0 10px;
+		}
+		.textt2{
+			color: #00efba;
+			margin-bottom: 11px;
+		}		
+		.textt3{
+			font-size: 10px;
+			color: #918ab3;
+			line-height: 1;
+			min-width: 10px;
+			margin-bottom: 25px;
+		}
+		.textt3 span{
+			color: #c72fa0;
+		}
+		.content-item a{
+			background: #1c1a31;
+			color: #fff;
+			font-weight: 700;
+			font-size: 14px;
+			padding: 15px 28px;
+			clip-path: polygon(10px 0,calc(100% - 10px) 0, 100% 50%, calc(100% - 10px ) 100%, 10px 100%, 0 50%);
+			text-decoration: none;
+			transition: 0.5s;
+		}
+		.content-item:hover a{
+			background: #c72fa0;
+		}
+		.animation{
+			background: linear-gradient(0deg, #30267d,transparent);
+			height: 300px;
+			clip-path: polygon(0 0,100% 0, 100% 80% , 50% 100%,0 80%);
+			position: absolute;
+			top: -100%;
+			left: 0;
+			z-index: -1;
+			transition: 0.5s;
+			opacity: 0;
+			margin-left: 25%;
+			width: 50%;
+		}
+		.content-item:hover .animation{
+			top: 50px;
+			opacity: 1;
+			width: 100%;
+			margin-left: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="content-item">
+		<div class="animation"></div>
+		<img src="img/arma.png">
+		<div class="textt1">cool skins</div>
+		<div class="textt2">$ 2.70</div>
+		<div class="textt3">LEFT <span>3</span> days</div>
+		<a href=""><span>COMPRAR</span></a>
+	</div>
+</body>
+</html>
